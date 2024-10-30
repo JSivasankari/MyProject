@@ -1,0 +1,52 @@
+import java.util.*;
+class student1{
+    String rollno;
+    String name;
+    String branch;
+    String phone;
+    void read(){
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the rollno");
+        rollno=s.next();
+        System.out.println("enter the name");
+        name=s.next();
+        System.out.println("enter the branch");
+        branch=s.next();
+        System.out.println("enter the phone");
+        phone=s.next();
+        
+    }
+    void display(){
+        System.out.println("ROLLNO:"+rollno);
+        System.out.println("NAME:"+name);
+        System.out.println("BRANCH:"+branch);
+        System.out.println("PHONE:"+phone);
+        System.out.println();
+    }
+           
+}
+
+
+
+public class student {
+        public static void main(String []args){
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the no. of students");
+        int n=s.nextInt();
+        student1[] s1 = new student1[n];
+        for(int i=0;i<n;i++)
+        {
+            s1[i]=new student1();
+        }
+        for(int i=0;i<n;i++)
+        {
+            s1[i].read();
+        }
+        for(int i=0;i<n;i++)
+        {
+            s1[i].display();
+        }
+        
+    }
+}
+ 
